@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <g transform="translate(40,40)">
+    <path d="M90 0 C40 0 0 40 0 90 C0 150 90 220 90 220 C90 220 180 150 180 90 C180 40 140 0 90 0 Z"
+          fill="#631a13"/>
+    <g fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M45 95 L60 70 L120 70 L135 95"/>
+      <path d="M55 95 L125 95"/>
+      <circle cx="65" cy="105" r="8" fill="#ffffff" stroke="none"/>
+      <circle cx="115" cy="105" r="8" fill="#ffffff" stroke="none"/>
+      <path d="M65 70 L80 55 L110 55 L120 70"/>
+    </g>
+  </g>
+
+  <text x="260" y="170"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="110"
+        font-weight="700"
+        fill="#212121">RentaRide</text>
+</svg>

@@ -1,20 +1,11 @@
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
-
   return (
     <>
-      <div>
-        <p className="m-2 flex items-center justify-center bg-red-600">
-          Hello, World!
-        </p>
-        <p className="m-2 flex items-center justify-center bg-red-600">
-          Hello, World!
-        </p>
-        <p className="m-2 flex items-center justify-center bg-red-600">
-          Hello, World!
-        </p>
-      </div>
+      <Header />
+      <div></div>
     </>
   );
 }
