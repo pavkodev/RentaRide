@@ -1,5 +1,7 @@
 import Calendar from "react-calendar";
 const Header = () => {
+  const dateToday = new Date();
+
   return (
     <>
       <div className="flex flex-col justify-around bg-stone-100 p-4 shadow-lg sm:flex-row">
@@ -38,7 +40,13 @@ const Header = () => {
           <p>Login/Signup</p>
         </div>
       </div>
-      <Calendar className={"m-2"} minDate={new Date()} />
+      <Calendar
+        defaultValue={new Date(new Date().setDate(dateToday.getDate() + 1))}
+        selectRange={true}
+        minDate={dateToday}
+        minDetail="year"
+        className={"m-2"}
+      />
     </>
   );
 };
