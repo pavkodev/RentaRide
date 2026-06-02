@@ -168,6 +168,7 @@
   background-color: var(--color-green-200);
   color: var(--color-green-700);
   font-weight: bold;
+  transition: border-radius 0.175s;
 }
 .react-calendar__tile--rangeEnd {
   border-radius: 0px 16px 16px 0px / 0px 16px 16px 0px;
