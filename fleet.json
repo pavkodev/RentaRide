@@ -1,0 +1,1688 @@
+{
+  "dataset_label": "European Rental Fleet 2026",
+  "data": [
+    {
+      "location": {
+        "city": "Edinburgh",
+        "airportCode": "EDI",
+        "country": "Scotland"
+      },
+      "fleet": [
+        {
+          "id": "EDI-3286",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 43,
+            "currency": "EUR"
+          },
+          "rating": 9.0,
+          "securityDeposit": 500
+        },
+        {
+          "id": "EDI-7912",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 33,
+            "currency": "EUR"
+          },
+          "rating": 7.3,
+          "securityDeposit": 200
+        },
+        {
+          "id": "EDI-1434",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2024,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 55,
+            "currency": "EUR"
+          },
+          "rating": 9.1,
+          "securityDeposit": 500
+        },
+        {
+          "id": "EDI-7873",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2022,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 87,
+            "currency": "EUR"
+          },
+          "rating": 8.7,
+          "securityDeposit": 200
+        },
+        {
+          "id": "EDI-3615",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 84,
+            "currency": "EUR"
+          },
+          "rating": 8.0,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Glasgow",
+        "airportCode": "GLA",
+        "country": "Scotland"
+      },
+      "fleet": [
+        {
+          "id": "GLA-2584",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2023,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 138,
+            "currency": "EUR"
+          },
+          "rating": 8.0,
+          "securityDeposit": 300
+        },
+        {
+          "id": "GLA-1711",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2024,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 88,
+            "currency": "EUR"
+          },
+          "rating": 8.6,
+          "securityDeposit": 300
+        },
+        {
+          "id": "GLA-5803",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2024,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 109,
+            "currency": "EUR"
+          },
+          "rating": 9.6,
+          "securityDeposit": 300
+        },
+        {
+          "id": "GLA-4150",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 38,
+            "currency": "EUR"
+          },
+          "rating": 7.1,
+          "securityDeposit": 200
+        },
+        {
+          "id": "GLA-5741",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2022,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 139,
+            "currency": "EUR"
+          },
+          "rating": 7.7,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Belfast",
+        "airportCode": "BFS",
+        "country": "Northern Ireland"
+      },
+      "fleet": [
+        {
+          "id": "BFS-6820",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2022,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Zento",
+          "pricing": {
+            "dailyRate": 115,
+            "currency": "EUR"
+          },
+          "rating": 7.8,
+          "securityDeposit": 500
+        },
+        {
+          "id": "BFS-2169",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2024,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 111,
+            "currency": "EUR"
+          },
+          "rating": 7.5,
+          "securityDeposit": 500
+        },
+        {
+          "id": "BFS-3677",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2023,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 78,
+            "currency": "EUR"
+          },
+          "rating": 7.8,
+          "securityDeposit": 500
+        },
+        {
+          "id": "BFS-4598",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 71,
+            "currency": "EUR"
+          },
+          "rating": 9.4,
+          "securityDeposit": 200
+        },
+        {
+          "id": "BFS-1525",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 81,
+            "currency": "EUR"
+          },
+          "rating": 7.8,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Paris",
+        "airportCode": "CDG",
+        "country": "France"
+      },
+      "fleet": [
+        {
+          "id": "CDG-8517",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2022,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 63,
+            "currency": "EUR"
+          },
+          "rating": 7.4,
+          "securityDeposit": 500
+        },
+        {
+          "id": "CDG-9830",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 125,
+            "currency": "EUR"
+          },
+          "rating": 8.7,
+          "securityDeposit": 500
+        },
+        {
+          "id": "CDG-6930",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 47,
+            "currency": "EUR"
+          },
+          "rating": 8.5,
+          "securityDeposit": 200
+        },
+        {
+          "id": "CDG-1771",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2022,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 49,
+            "currency": "EUR"
+          },
+          "rating": 8.8,
+          "securityDeposit": 500
+        },
+        {
+          "id": "CDG-2040",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2023,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 78,
+            "currency": "EUR"
+          },
+          "rating": 8.7,
+          "securityDeposit": 300
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Berlin",
+        "airportCode": "BER",
+        "country": "Germany"
+      },
+      "fleet": [
+        {
+          "id": "BER-6573",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2022,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 67,
+            "currency": "EUR"
+          },
+          "rating": 8.3,
+          "securityDeposit": 300
+        },
+        {
+          "id": "BER-5315",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 127,
+            "currency": "EUR"
+          },
+          "rating": 7.5,
+          "securityDeposit": 200
+        },
+        {
+          "id": "BER-5889",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 94,
+            "currency": "EUR"
+          },
+          "rating": 8.8,
+          "securityDeposit": 200
+        },
+        {
+          "id": "BER-3646",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2024,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Zento",
+          "pricing": {
+            "dailyRate": 129,
+            "currency": "EUR"
+          },
+          "rating": 9.7,
+          "securityDeposit": 200
+        },
+        {
+          "id": "BER-6310",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2023,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 32,
+            "currency": "EUR"
+          },
+          "rating": 7.3,
+          "securityDeposit": 300
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Madrid",
+        "airportCode": "MAD",
+        "country": "Spain"
+      },
+      "fleet": [
+        {
+          "id": "MAD-8962",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2022,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 127,
+            "currency": "EUR"
+          },
+          "rating": 8.5,
+          "securityDeposit": 200
+        },
+        {
+          "id": "MAD-8787",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 51,
+            "currency": "EUR"
+          },
+          "rating": 7.8,
+          "securityDeposit": 500
+        },
+        {
+          "id": "MAD-4470",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 126,
+            "currency": "EUR"
+          },
+          "rating": 9.1,
+          "securityDeposit": 200
+        },
+        {
+          "id": "MAD-6107",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2023,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 115,
+            "currency": "EUR"
+          },
+          "rating": 8.9,
+          "securityDeposit": 300
+        },
+        {
+          "id": "MAD-8397",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2022,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 61,
+            "currency": "EUR"
+          },
+          "rating": 7.7,
+          "securityDeposit": 300
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Rome",
+        "airportCode": "FCO",
+        "country": "Italy"
+      },
+      "fleet": [
+        {
+          "id": "FCO-2163",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 110,
+            "currency": "EUR"
+          },
+          "rating": 7.2,
+          "securityDeposit": 200
+        },
+        {
+          "id": "FCO-6413",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2022,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 95,
+            "currency": "EUR"
+          },
+          "rating": 7.7,
+          "securityDeposit": 500
+        },
+        {
+          "id": "FCO-4510",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2024,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 46,
+            "currency": "EUR"
+          },
+          "rating": 9.1,
+          "securityDeposit": 500
+        },
+        {
+          "id": "FCO-8744",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 130,
+            "currency": "EUR"
+          },
+          "rating": 8.4,
+          "securityDeposit": 300
+        },
+        {
+          "id": "FCO-2545",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2022,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 114,
+            "currency": "EUR"
+          },
+          "rating": 8.3,
+          "securityDeposit": 300
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Amsterdam",
+        "airportCode": "AMS",
+        "country": "Netherlands"
+      },
+      "fleet": [
+        {
+          "id": "AMS-7596",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2024,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 73,
+            "currency": "EUR"
+          },
+          "rating": 9.3,
+          "securityDeposit": 200
+        },
+        {
+          "id": "AMS-4139",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2022,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 98,
+            "currency": "EUR"
+          },
+          "rating": 8.3,
+          "securityDeposit": 300
+        },
+        {
+          "id": "AMS-5563",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2023,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 61,
+            "currency": "EUR"
+          },
+          "rating": 9.5,
+          "securityDeposit": 200
+        },
+        {
+          "id": "AMS-2604",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 113,
+            "currency": "EUR"
+          },
+          "rating": 9.9,
+          "securityDeposit": 200
+        },
+        {
+          "id": "AMS-4872",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2022,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 82,
+            "currency": "EUR"
+          },
+          "rating": 8.4,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Dublin",
+        "airportCode": "DUB",
+        "country": "Ireland"
+      },
+      "fleet": [
+        {
+          "id": "DUB-5345",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2023,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 66,
+            "currency": "EUR"
+          },
+          "rating": 8.2,
+          "securityDeposit": 500
+        },
+        {
+          "id": "DUB-8973",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 54,
+            "currency": "EUR"
+          },
+          "rating": 7.9,
+          "securityDeposit": 200
+        },
+        {
+          "id": "DUB-9883",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 125,
+            "currency": "EUR"
+          },
+          "rating": 7.9,
+          "securityDeposit": 200
+        },
+        {
+          "id": "DUB-8811",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2024,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 147,
+            "currency": "EUR"
+          },
+          "rating": 9.5,
+          "securityDeposit": 200
+        },
+        {
+          "id": "DUB-9320",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 138,
+            "currency": "EUR"
+          },
+          "rating": 7.5,
+          "securityDeposit": 500
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Vienna",
+        "airportCode": "VIE",
+        "country": "Austria"
+      },
+      "fleet": [
+        {
+          "id": "VIE-5033",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 106,
+            "currency": "EUR"
+          },
+          "rating": 7.1,
+          "securityDeposit": 200
+        },
+        {
+          "id": "VIE-9565",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2023,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 149,
+            "currency": "EUR"
+          },
+          "rating": 7.8,
+          "securityDeposit": 500
+        },
+        {
+          "id": "VIE-6147",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 63,
+            "currency": "EUR"
+          },
+          "rating": 8.1,
+          "securityDeposit": 500
+        },
+        {
+          "id": "VIE-5915",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2023,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 70,
+            "currency": "EUR"
+          },
+          "rating": 9.7,
+          "securityDeposit": 200
+        },
+        {
+          "id": "VIE-8508",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 102,
+            "currency": "EUR"
+          },
+          "rating": 9.9,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Prague",
+        "airportCode": "PRG",
+        "country": "Czechia"
+      },
+      "fleet": [
+        {
+          "id": "PRG-5002",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2023,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 66,
+            "currency": "EUR"
+          },
+          "rating": 7.5,
+          "securityDeposit": 500
+        },
+        {
+          "id": "PRG-5956",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2024,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 133,
+            "currency": "EUR"
+          },
+          "rating": 8.9,
+          "securityDeposit": 200
+        },
+        {
+          "id": "PRG-5905",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2024,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 43,
+            "currency": "EUR"
+          },
+          "rating": 9.7,
+          "securityDeposit": 200
+        },
+        {
+          "id": "PRG-2891",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Zento",
+          "pricing": {
+            "dailyRate": 125,
+            "currency": "EUR"
+          },
+          "rating": 8.6,
+          "securityDeposit": 300
+        },
+        {
+          "id": "PRG-4450",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2024,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Zento",
+          "pricing": {
+            "dailyRate": 73,
+            "currency": "EUR"
+          },
+          "rating": 7.6,
+          "securityDeposit": 500
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Warsaw",
+        "airportCode": "WAW",
+        "country": "Poland"
+      },
+      "fleet": [
+        {
+          "id": "WAW-7939",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2023,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 35,
+            "currency": "EUR"
+          },
+          "rating": 7.0,
+          "securityDeposit": 200
+        },
+        {
+          "id": "WAW-5291",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 124,
+            "currency": "EUR"
+          },
+          "rating": 8.3,
+          "securityDeposit": 500
+        },
+        {
+          "id": "WAW-1158",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2022,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 39,
+            "currency": "EUR"
+          },
+          "rating": 9.7,
+          "securityDeposit": 500
+        },
+        {
+          "id": "WAW-9938",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2022,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 136,
+            "currency": "EUR"
+          },
+          "rating": 8.1,
+          "securityDeposit": 500
+        },
+        {
+          "id": "WAW-8041",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 35,
+            "currency": "EUR"
+          },
+          "rating": 7.9,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Lisbon",
+        "airportCode": "LIS",
+        "country": "Portugal"
+      },
+      "fleet": [
+        {
+          "id": "LIS-7658",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2024,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Zento",
+          "pricing": {
+            "dailyRate": 125,
+            "currency": "EUR"
+          },
+          "rating": 7.4,
+          "securityDeposit": 200
+        },
+        {
+          "id": "LIS-3662",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 142,
+            "currency": "EUR"
+          },
+          "rating": 8.2,
+          "securityDeposit": 200
+        },
+        {
+          "id": "LIS-6442",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 132,
+            "currency": "EUR"
+          },
+          "rating": 8.9,
+          "securityDeposit": 500
+        },
+        {
+          "id": "LIS-5065",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2023,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 50,
+            "currency": "EUR"
+          },
+          "rating": 9.3,
+          "securityDeposit": 200
+        },
+        {
+          "id": "LIS-1634",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 58,
+            "currency": "EUR"
+          },
+          "rating": 7.6,
+          "securityDeposit": 300
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Athens",
+        "airportCode": "ATH",
+        "country": "Greece"
+      },
+      "fleet": [
+        {
+          "id": "ATH-4164",
+          "brand": "Skoda",
+          "model": "Octavia",
+          "year": 2023,
+          "category": "Sedan",
+          "transmission": "Manual",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 72,
+            "currency": "EUR"
+          },
+          "rating": 7.8,
+          "securityDeposit": 200
+        },
+        {
+          "id": "ATH-5573",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2023,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 112,
+            "currency": "EUR"
+          },
+          "rating": 8.5,
+          "securityDeposit": 500
+        },
+        {
+          "id": "ATH-9785",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "EuroDrive",
+          "pricing": {
+            "dailyRate": 150,
+            "currency": "EUR"
+          },
+          "rating": 7.1,
+          "securityDeposit": 300
+        },
+        {
+          "id": "ATH-5349",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Veltra",
+          "pricing": {
+            "dailyRate": 43,
+            "currency": "EUR"
+          },
+          "rating": 8.7,
+          "securityDeposit": 300
+        },
+        {
+          "id": "ATH-6139",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 107,
+            "currency": "EUR"
+          },
+          "rating": 9.9,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Brussels",
+        "airportCode": "BRU",
+        "country": "Belgium"
+      },
+      "fleet": [
+        {
+          "id": "BRU-8144",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2022,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 96,
+            "currency": "EUR"
+          },
+          "rating": 9.7,
+          "securityDeposit": 500
+        },
+        {
+          "id": "BRU-4228",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2023,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 85,
+            "currency": "EUR"
+          },
+          "rating": 7.2,
+          "securityDeposit": 500
+        },
+        {
+          "id": "BRU-6143",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Zento",
+          "pricing": {
+            "dailyRate": 138,
+            "currency": "EUR"
+          },
+          "rating": 7.4,
+          "securityDeposit": 300
+        },
+        {
+          "id": "BRU-6067",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2024,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 82,
+            "currency": "EUR"
+          },
+          "rating": 7.9,
+          "securityDeposit": 500
+        },
+        {
+          "id": "BRU-3085",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Zento",
+          "pricing": {
+            "dailyRate": 83,
+            "currency": "EUR"
+          },
+          "rating": 8.9,
+          "securityDeposit": 300
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Copenhagen",
+        "airportCode": "CPH",
+        "country": "Denmark"
+      },
+      "fleet": [
+        {
+          "id": "CPH-1006",
+          "brand": "Toyota",
+          "model": "Corolla",
+          "year": 2023,
+          "category": "Compact",
+          "transmission": "Automatic",
+          "fuelType": "Hybrid",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 66,
+            "currency": "EUR"
+          },
+          "rating": 7.6,
+          "securityDeposit": 500
+        },
+        {
+          "id": "CPH-6279",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2023,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 86,
+            "currency": "EUR"
+          },
+          "rating": 8.3,
+          "securityDeposit": 200
+        },
+        {
+          "id": "CPH-8752",
+          "brand": "Volvo",
+          "model": "V60",
+          "year": 2024,
+          "category": "Station Wagon",
+          "transmission": "Automatic",
+          "fuelType": "Diesel",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 51,
+            "currency": "EUR"
+          },
+          "rating": 8.9,
+          "securityDeposit": 300
+        },
+        {
+          "id": "CPH-6491",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2022,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 134,
+            "currency": "EUR"
+          },
+          "rating": 9.8,
+          "securityDeposit": 200
+        },
+        {
+          "id": "CPH-6085",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2022,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "CityMotion",
+          "pricing": {
+            "dailyRate": 133,
+            "currency": "EUR"
+          },
+          "rating": 7.6,
+          "securityDeposit": 200
+        }
+      ]
+    },
+    {
+      "location": {
+        "city": "Stockholm",
+        "airportCode": "ARN",
+        "country": "Sweden"
+      },
+      "fleet": [
+        {
+          "id": "ARN-7790",
+          "brand": "Volkswagen",
+          "model": "Polo",
+          "year": 2024,
+          "category": "Economy",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 103,
+            "currency": "EUR"
+          },
+          "rating": 7.6,
+          "securityDeposit": 500
+        },
+        {
+          "id": "ARN-9099",
+          "brand": "Ford",
+          "model": "Fiesta",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 61,
+            "currency": "EUR"
+          },
+          "rating": 7.4,
+          "securityDeposit": 500
+        },
+        {
+          "id": "ARN-2746",
+          "brand": "BMW",
+          "model": "5-Series",
+          "year": 2023,
+          "category": "Premium",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 4,
+          "seats": 5,
+          "rentalCompany": "NovaRent",
+          "pricing": {
+            "dailyRate": 58,
+            "currency": "EUR"
+          },
+          "rating": 7.5,
+          "securityDeposit": 500
+        },
+        {
+          "id": "ARN-8611",
+          "brand": "Hyundai",
+          "model": "Tucson",
+          "year": 2022,
+          "category": "SUV",
+          "transmission": "Automatic",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Autra",
+          "pricing": {
+            "dailyRate": 101,
+            "currency": "EUR"
+          },
+          "rating": 7.7,
+          "securityDeposit": 200
+        },
+        {
+          "id": "ARN-3184",
+          "brand": "Renault",
+          "model": "Clio",
+          "year": 2023,
+          "category": "Economy",
+          "transmission": "Manual",
+          "fuelType": "Petrol",
+          "doors": 5,
+          "seats": 5,
+          "rentalCompany": "Drivex",
+          "pricing": {
+            "dailyRate": 115,
+            "currency": "EUR"
+          },
+          "rating": 8.5,
+          "securityDeposit": 500
+        }
+      ]
+    }
+  ]
+}

@@ -4,8 +4,12 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-around bg-stone-100 p-4 shadow-lg sm:flex-row">
-        <img src="src\assets\RentaRide.svg" alt="" />
+      <div className="flex flex-col items-center justify-between bg-stone-100 p-4 shadow-lg md:flex-row">
+        <img
+          src="src\assets\RentaRide_logo_compact.svg"
+          alt="RentaRide logo"
+          className="my-4 size-full md:my-0 md:size-[30%]"
+        />
         <div className="flex flex-col items-center justify-around gap-2 sm:flex-row">
           <button className="flex cursor-pointer items-center justify-between rounded-lg bg-green-600 p-2 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
             <img
@@ -13,20 +17,24 @@ const Header = () => {
               alt=""
               className="mr-2 size-5"
             />
-            Select location
+            Location
           </button>
-          <div className="flex cursor-default gap-2 rounded-lg bg-green-600 p-2 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
-            <p className="flex items-center">
-              <img src="/src/assets/datetime.svg" className="mr-1 size-5" />
-              Date
-            </p>
-            <div className="border opacity-40"></div>
-            <p>Time</p>
-          </div>
-          <div className="flex cursor-default gap-2 rounded-lg bg-green-600 p-2 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
-            <p>Date</p>
-            <div className="border opacity-40"></div>
-            <p>Time</p>
+          <div className="relative flex cursor-default gap-2 rounded-lg bg-green-600 p-2 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
+            <label htmlFor="chkbx-date-select" className="peer flex">
+              <input type="checkbox" id="chkbx-date-select" />
+              Select Dates...
+            </label>
+            <Calendar
+              defaultValue={
+                new Date(new Date().setDate(dateToday.getDate() + 1))
+              }
+              selectRange={true}
+              minDate={dateToday}
+              minDetail="year"
+              className={
+                "peer-has-checked:animate-slide-down animate-slide-up absolute left-[50%] my-2 hidden w-fit translate-x-[-50%] peer-has-checked:block"
+              }
+            />
           </div>
           <button
             type="submit"
@@ -40,13 +48,6 @@ const Header = () => {
           <p>Login/Signup</p>
         </div>
       </div>
-      <Calendar
-        defaultValue={new Date(new Date().setDate(dateToday.getDate() + 1))}
-        selectRange={true}
-        minDate={dateToday}
-        minDetail="year"
-        className={"m-2"}
-      />
     </>
   );
 };

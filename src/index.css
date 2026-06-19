@@ -1,1 +1,31 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-slide-down: slide-down 0.225s ease-out forwards;
+  --animate-slide-up: slide-up 0.225s ease-out forwards;
+
+  @keyframes slide-down {
+    from {
+      display: none;
+      opacity: 0%;
+      transform: translateY(-10%);
+    }
+    to {
+      display: block;
+      opacity: 100%;
+      transform: translateY(2rem);
+    }
+  }
+  @keyframes slide-up {
+    from {
+      display: block;
+      opacity: 100%;
+      transform: translateY(2rem);
+    }
+    to {
+      display: none;
+      opacity: 0%;
+      transform: translateY(-10%);
+    }
+  }
+}
