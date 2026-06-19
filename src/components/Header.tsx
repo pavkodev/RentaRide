@@ -21,7 +21,11 @@ const Header = () => {
           </button>
           <div className="relative flex cursor-default gap-2 rounded-lg bg-green-600 p-2 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
             <label htmlFor="chkbx-date-select" className="peer flex">
-              <input type="checkbox" id="chkbx-date-select" />
+              <input
+                type="checkbox"
+                id="chkbx-date-select"
+                className="hidden"
+              />
               Select Dates...
             </label>
             <Calendar
