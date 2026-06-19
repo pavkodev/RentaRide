@@ -13,14 +13,14 @@
     to {
       display: block;
       opacity: 100%;
-      transform: translateY(2rem);
+      transform: translateY(3rem);
     }
   }
   @keyframes slide-up {
     from {
       display: block;
       opacity: 100%;
-      transform: translateY(2rem);
+      transform: translateY(3rem);
     }
     to {
       display: none;

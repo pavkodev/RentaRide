@@ -19,8 +19,8 @@ const Header = () => {
             />
             Location
           </button>
-          <div className="relative flex cursor-default gap-2 rounded-lg bg-green-600 p-2 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
-            <label htmlFor="chkbx-date-select" className="peer flex">
+          <div className="relative flex cursor-default gap-2 rounded-lg bg-green-600 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
+            <label htmlFor="chkbx-date-select" className="peer flex p-2">
               <input
                 type="checkbox"
                 id="chkbx-date-select"
@@ -36,7 +36,7 @@ const Header = () => {
               minDate={dateToday}
               minDetail="year"
               className={
-                "peer-has-checked:animate-slide-down animate-slide-up absolute left-[50%] my-2 hidden w-fit translate-x-[-50%] peer-has-checked:block"
+                "motion-safe:peer-has-checked:animate-slide-down motion-safe:animate-slide-up absolute left-[50%] hidden w-fit translate-x-[-50%] peer-has-checked:block motion-reduce:translate-y-12"
               }
             />
           </div>
