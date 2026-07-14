@@ -1,4 +1,4 @@
-.react-calendar {
+/* .react-calendar {
   min-width: fit-content;
   width: 300px;
   background: rgb(255, 255, 255);
@@ -191,7 +191,7 @@ Rounded border will be on the right when selecting dates prior to origin date.
 Rounded border will be on left when selecting dates post origin date.
 Choosing origin date rounds both edges of border.
 */
-.react-calendar__tile--rangeBothEnds.react-calendar__tile--hoverStart {
+/* .react-calendar__tile--rangeBothEnds.react-calendar__tile--hoverStart {
   border-radius: 16px 0px 0px 16px / 16px 0px 0px 16px;
 }
 .react-calendar__tile--rangeBothEnds.react-calendar__tile--hoverEnd {
@@ -199,4 +199,4 @@ Choosing origin date rounds both edges of border.
 }
 .react-calendar__tile--rangeBothEnds.react-calendar__tile--hoverBothEnds {
   border-radius: 16px 16px 16px 16px / 16px 16px 16px 16px;
-}
+} */
