@@ -92,9 +92,6 @@ const Header = () => {
             </label>
             <Calendar
               onChange={(value) => handleChange(value)}
-              defaultValue={
-                new Date(new Date().setDate(dateToday.getDate() + 1))
-              }
               selectRange={true}
               minDate={dateToday}
               minDetail="year"
