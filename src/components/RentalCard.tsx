@@ -1,8 +1,10 @@
-const RentalCard = () => {
+import type { carInfo } from "../types/types";
+
+const RentalCard = ({ car }: { car: carInfo }) => {
   return (
     <div className="m-auto my-2 flex w-fit max-w-[90%] flex-col rounded-md border-3 bg-neutral-100 text-[#212121] sm:grid sm:auto-cols-max">
       <img
-        src="https://content.r9cdn.net/rimg/car-images/generic/01_mini_white.png?width=160&height=180"
+        src={`${car.imageUrl}?width=286&height=180`}
         className="size-64 h-full w-full bg-radial from-green-500/60 from-25% to-neutral-100 to-70% p-4 sm:col-1 sm:row-span-2 sm:place-self-end"
         alt="Photo of (vehicle class)"
       />

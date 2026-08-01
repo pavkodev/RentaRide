@@ -2,13 +2,13 @@ import "./App.css";
 import "react-calendar/dist/Calendar.css";
 import "./CustomCalendarStyling.css";
 import Header from "./components/Header";
-import RentalCard from "./components/RentalCard";
+import FleetCards from "./components/FleetCards";
 
 function App() {
   return (
     <>
       <Header />
-      <RentalCard />
+      <FleetCards />
     </>
   );
 }
