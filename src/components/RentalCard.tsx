@@ -7,6 +7,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
         src={`${car.imageUrl}?width=286&height=180`}
         className="size-64 h-full w-full bg-radial from-green-500/60 from-25% to-neutral-100 to-70% p-4 sm:col-1 sm:row-span-2 sm:place-self-end"
         alt="Photo of (vehicle class)"
+        loading="lazy"
       />
 
       <div className="sm:col-span-2 sm:grid sm:h-full">

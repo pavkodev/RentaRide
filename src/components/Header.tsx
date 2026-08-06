@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Calendar from "react-calendar";
 import { type CalendarValues, CalendarMonths } from "../types/calendar-types";
 const Header = () => {
@@ -12,6 +12,8 @@ const Header = () => {
   );
 
   const [selectionString, setSelectionString] = useState("Choose dates...");
+  const [showCalendar, setShowCalendar] = useState(true);
+  const calendarRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (input: CalendarValues) => {
     if (input === null) return;
@@ -47,6 +49,22 @@ const Header = () => {
     setDateSelection(input);
   };
 
+  useEffect(() => {
+    const handleCalendarClose = (e: Event) => {
+      if (!showCalendar) return;
+      if (calendarRef.current) {
+        if (!calendarRef.current.contains(e.target as Node)) {
+          setShowCalendar(false);
+        }
+      }
+    };
+    document.addEventListener("mousedown", handleCalendarClose);
+
+    return () => {
+      document.removeEventListener("mousedown", handleCalendarClose);
+    };
+  }, [showCalendar]);
+
   return (
     <>
       <div className="flex flex-col items-center justify-between bg-stone-100 p-4 shadow-lg md:flex-row">
@@ -67,16 +85,14 @@ const Header = () => {
             </svg>
             Location
           </button>
-          <div className="relative flex cursor-default gap-2 rounded-lg bg-green-600 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50">
-            <label
-              htmlFor="chkbx-date-select"
+          <div
+            className="relative flex cursor-default gap-2 rounded-lg bg-green-600 text-white shadow-md inset-shadow-sm transition-all hover:shadow-lg hover:inset-shadow-white/50"
+            ref={calendarRef}
+          >
+            <button
               className="peer flex items-center p-2 select-none"
+              onClick={() => setShowCalendar(!showCalendar)}
             >
-              <input
-                type="checkbox"
-                id="chkbx-date-select"
-                className="hidden"
-              />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -89,16 +105,14 @@ const Header = () => {
                 />
               </svg>
               {selectionString}
-            </label>
+            </button>
             <Calendar
               onChange={(value) => handleChange(value)}
               selectRange={true}
               minDate={dateToday}
               minDetail="year"
               allowPartialRange={true}
-              className={
-                "motion-safe:peer-has-checked:animate-slide-down motion-safe:animate-slide-up absolute left-[50%] hidden w-fit translate-x-[-50%] peer-has-checked:block motion-reduce:translate-y-12"
-              }
+              className={`${showCalendar ? "motion-safe:animate-slide-down block" : "motion-safe:animate-slide-up hidden"} absolute left-[50%] z-10 w-fit translate-x-[-50%] motion-reduce:translate-y-12`}
             />
           </div>
           <button
