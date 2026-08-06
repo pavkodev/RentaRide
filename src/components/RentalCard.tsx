@@ -12,50 +12,77 @@ const RentalCard = ({ car }: { car: carInfo }) => {
 
       <div className="sm:col-span-2 sm:grid sm:h-full">
         <div className="p-2">
-          <strong>Vehicle name</strong>
-          <p className="text-xs">Or similar (class)</p>
+          <strong>
+            {car.brand} {car.model}
+          </strong>
+          <p className="text-xs">Or similar {car.category}</p>
         </div>
         <div className="flex flex-wrap p-2">
-          <div className="flex">
+          <div className="flex items-center">
             <img
-              src="src/assets/placeholder_icon.svg"
+              src="src/assets/car_seats.svg"
               className="size-5"
+              alt="Seats"
+            />
+            <p className="pr-1">{car.seats}</p>
+          </div>
+          <div className="flex items-center">
+            <img
+              src="src/assets/car_doors.svg"
+              className="mr-1 size-5"
               alt="Location"
             />
-            <p className="pr-1">Seats</p>
+            <p className="pr-1">{car.doors}</p>
           </div>
-          <div className="flex">
+          {car.largeBags > 0 ? (
+            <div className="flex items-center">
+              <img
+                src="src/assets/car_bags_large.svg"
+                className="size-5"
+                alt="Large bags"
+              />
+              <p className="pr-1">{car.largeBags}</p>
+            </div>
+          ) : (
+            ""
+          )}
+          {car.smallBags > 0 ? (
+            <div className="flex items-center">
+              <img
+                src="src/assets/car_bags_small.svg"
+                className="size-5"
+                alt="Small bags"
+              />
+              <p className="pr-1">{car.smallBags}</p>
+            </div>
+          ) : (
+            ""
+          )}
+
+          <div className="flex items-center">
             <img
-              src="src/assets/placeholder_icon.svg"
+              src="src/assets/car_transmission.svg"
               className="size-5"
-              alt="Location"
+              alt="Transmission"
             />
-            <p className="pr-1">Luggage</p>
+            <p className="pr-1">{car.transmission}</p>
           </div>
-          <div className="flex">
-            <img
-              src="src/assets/placeholder_icon.svg"
-              className="size-5"
-              alt="Location"
-            />
-            <p className="pr-1">Doors</p>
+          <div className="flex items-center">
+            <img src="src/assets/car_fuel.svg" className="size-5" alt="Fuel" />
+            <p className="pr-1">{car.fuelType}</p>
           </div>
-          <div className="flex">
-            <img
-              src="src/assets/placeholder_icon.svg"
-              className="size-5"
-              alt="Location"
-            />
-            <p className="pr-1">Transmission</p>
-          </div>
-          <div className="flex">
-            <img
-              src="src/assets/placeholder_icon.svg"
-              className="size-5"
-              alt="Location"
-            />
-            <p className="pr-1">Extra</p>
-          </div>
+          {car.airConditioning ? (
+            <div className="flex items-center">
+              <img
+                src="src/assets/car_aircon.svg"
+                className="size-5"
+                alt="Air conditioning"
+              />
+              <p className="pr-1">A/C</p>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
         <p className="p-2">
           Seats, luggage, doors, transmission, extra features like AC
