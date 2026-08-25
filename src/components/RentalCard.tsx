@@ -1,6 +1,17 @@
 import type { carInfo } from "../types/types";
 
 const RentalCard = ({ car }: { car: carInfo }) => {
+  const RATING_SCALE_MIN = 7;
+  const RATING_SCALE_MAX = 10;
+  const HUE_ANGLE_RANGE = 120; // red -> green on colour wheel is 0 -> 120
+  const normalisedRating =
+    (car.rating - RATING_SCALE_MIN) / (RATING_SCALE_MAX - RATING_SCALE_MIN);
+  let ratingHue = normalisedRating * HUE_ANGLE_RANGE;
+  if (car.rating < RATING_SCALE_MIN)
+    ratingHue = RATING_SCALE_MIN * HUE_ANGLE_RANGE;
+  const ratingHueBg = "hsl(" + ratingHue + ", 100%, 40%)";
+  const ratingHueContent = "contrast-color(" + ratingHueBg + ")";
+
   return (
     <div className="m-auto my-2 flex w-fit max-w-[90%] flex-col rounded-md border-3 bg-neutral-100 text-[#212121] sm:grid sm:auto-cols-max">
       <img
@@ -84,21 +95,71 @@ const RentalCard = ({ car }: { car: carInfo }) => {
             ""
           )}
         </div>
-        <p className="p-2">
-          Seats, luggage, doors, transmission, extra features like AC
-        </p>
-        <div className="flex p-2">
+        <div className="flex items-center p-2">
           <img
-            src="src/assets/placeholder_icon.svg"
+            src="src/assets/car_location.svg"
             className="size-5"
             alt="Location"
           />
-          <p>Location</p>
+          <p>
+            {car.location.city}, {car.location.country}
+          </p>
         </div>
         <div className="relative p-2 sm:before:absolute sm:before:top-0 sm:before:left-[50%] sm:before:h-1 sm:before:w-[75%] sm:before:translate-x-[-50%] sm:before:border-t-2 sm:before:border-green-600/40 sm:before:content-['']">
-          <p>Rating 1 - 10</p>
-          <p>Offer type (good, excellent, etc.)</p>
-          <p>Free cancellation (if applicable)</p>
+          <div
+            className="rounded-m flex w-fit items-center rounded-md p-1"
+            style={{
+              background: ratingHueBg,
+              color: ratingHueContent,
+            }}
+          >
+            <p>Offer rating: </p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="size-5"
+              style={{ fill: ratingHueContent }}
+            >
+              <title>star</title>
+              <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+            </svg>
+            <p>{car.rating}</p>
+          </div>
+          <div className="mt-2 flex">
+            <div
+              className={`flex items-center rounded-md p-1 pr-2 ${car.policies.freeCancellation ? "bg-green-500" : "bg-red-500"}`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="size-5"
+              >
+                {car.policies.freeCancellation ? (
+                  <path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" />
+                ) : (
+                  <path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M14.59,8L12,10.59L9.41,8L8,9.41L10.59,12L8,14.59L9.41,16L12,13.41L14.59,16L16,14.59L13.41,12L16,9.41L14.59,8Z" />
+                )}
+              </svg>
+
+              <p>Free cancellation</p>
+            </div>
+            <div
+              className={`mx-2 flex items-center rounded-md p-1 pr-2 ${car.policies.unlimitedMileage ? "bg-green-500" : "bg-red-500"}`}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="size-5"
+              >
+                {car.policies.unlimitedMileage ? (
+                  <path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z" />
+                ) : (
+                  <path d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2C6.47,2 2,6.47 2,12C2,17.53 6.47,22 12,22C17.53,22 22,17.53 22,12C22,6.47 17.53,2 12,2M14.59,8L12,10.59L9.41,8L8,9.41L10.59,12L8,14.59L9.41,16L12,13.41L14.59,16L16,14.59L13.41,12L16,9.41L14.59,8Z" />
+                )}
+              </svg>
+              <p>Unlimited Mileage</p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="relative flex justify-around p-4 sm:col-span-3 sm:col-start-2 sm:before:absolute sm:before:top-0 sm:before:h-1 sm:before:w-full sm:before:border-t-2 sm:before:border-green-600/40 sm:before:content-['']">

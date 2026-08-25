@@ -12,7 +12,7 @@ const Header = () => {
   );
 
   const [selectionString, setSelectionString] = useState("Choose dates...");
-  const [showCalendar, setShowCalendar] = useState(true);
+  const [showCalendar, setShowCalendar] = useState(false);
   const calendarRef = useRef<HTMLDivElement>(null);
 
   const handleChange = (input: CalendarValues) => {
