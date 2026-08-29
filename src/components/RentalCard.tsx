@@ -1,7 +1,7 @@
 import type { carInfo } from "../types/types";
 
 const RentalCard = ({ car }: { car: carInfo }) => {
-  const RATING_SCALE_MIN = 7;
+  const RATING_SCALE_MIN = 1; //mock database ratings did not go below 7
   const RATING_SCALE_MAX = 10;
   const HUE_ANGLE_RANGE = 120; // red -> green on colour wheel is 0 -> 120
   const normalisedRating =
@@ -9,7 +9,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
   let ratingHue = normalisedRating * HUE_ANGLE_RANGE;
   if (car.rating < RATING_SCALE_MIN)
     ratingHue = RATING_SCALE_MIN * HUE_ANGLE_RANGE;
-  const ratingHueBg = "hsl(" + ratingHue + ", 100%, 40%)";
+  const ratingHueBg = "hsl(" + ratingHue + ", 100%, 38%)";
   const ratingHueContent = "contrast-color(" + ratingHueBg + ")";
 
   return (
@@ -127,7 +127,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
           </div>
           <div className="mt-2 flex">
             <div
-              className={`flex items-center rounded-md p-1 pr-2 ${car.policies.freeCancellation ? "bg-green-500" : "bg-red-500"}`}
+              className={`flex items-center rounded-md p-1 pr-2 ${car.policies.freeCancellation ? "bg-green-500 fill-black text-black" : "border border-stone-400 bg-gray-200 fill-current/80 text-current/80"}`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +144,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
               <p>Free cancellation</p>
             </div>
             <div
-              className={`mx-2 flex items-center rounded-md p-1 pr-2 ${car.policies.unlimitedMileage ? "bg-green-500" : "bg-red-500"}`}
+              className={`mx-2 flex items-center rounded-md p-1 pr-2 ${car.policies.unlimitedMileage ? "bg-green-500 fill-black text-black" : "border border-stone-400 bg-stone-300/30 fill-current/90 text-current/90"}`}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
