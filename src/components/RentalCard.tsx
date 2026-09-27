@@ -1,7 +1,7 @@
 import type { carInfo } from "../types/types";
 
 const RentalCard = ({ car }: { car: carInfo }) => {
-  const RATING_SCALE_MIN = 1; //mock database ratings did not go below 7
+  const RATING_SCALE_MIN = 4.5; //mock database ratings did not go below 7
   const RATING_SCALE_MAX = 10;
   const HUE_ANGLE_RANGE = 120; // red -> green on colour wheel is 0 -> 120
   const normalisedRating =
@@ -168,9 +168,25 @@ const RentalCard = ({ car }: { car: carInfo }) => {
         <p>RentaMember - (Price - 10%, subscriber to the business)</p>
       </div>
       <div className="relative p-2 sm:col-4 sm:row-1 sm:before:absolute sm:before:top-0 sm:before:left-0 sm:before:h-full sm:before:border-l-2 sm:before:border-green-600/40 sm:before:content-['']">
-        <p>Rental Company</p>
-        <p>Total price</p>
-        <button>View offer (opens further info about car)</button>
+        <div className="flex h-full flex-col items-start justify-between">
+          <img
+            src={`${car.rentalCompany.logoUrl}`}
+            alt={`${car.rentalCompany.name} logo`}
+            className="m-0 mb-4 w-fit max-w-32"
+          />
+          <div>
+            <p className="text-xs">Total for (amount) days</p>
+            <p className="text-2xl font-bold">
+              &#8364;{car.pricing.dailyRate} * amount of days
+            </p>
+            <p className="text-xs italic">
+              at &#8364;{car.pricing.dailyRate} a day
+            </p>
+          </div>
+          <button className="self-end rounded-md bg-green-600 p-2 text-white transition-all hover:-translate-y-0.5 hover:bg-green-700 active:-translate-y-0">
+            View offer (opens further info about car)
+          </button>
+        </div>
       </div>
     </div>
   );

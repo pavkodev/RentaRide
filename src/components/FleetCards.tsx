@@ -64,7 +64,7 @@ const FleetCards = () => {
   }, [data]);
   return (
     <>
-      {data.slice(0, 5).map((datum, index) => (
+      {data.slice(0, 20).map((datum, index) => (
         <RentalCard key={index + datum.id} car={datum} />
       ))}
     </>
