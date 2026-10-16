@@ -13,15 +13,15 @@ const RentalCard = ({ car }: { car: carInfo }) => {
   const ratingHueContent = "contrast-color(" + ratingHueBg + ")";
 
   return (
-    <div className="m-auto my-2 flex w-fit max-w-[90%] flex-col rounded-md border-3 bg-neutral-100 text-[#212121] sm:grid sm:auto-cols-max">
+    <div className="m-auto my-2 flex w-full max-w-[90%] flex-col rounded-md border-3 bg-neutral-100 text-[#212121] xl:grid xl:max-w-full xl:auto-cols-max">
       <img
         src={`${car.imageUrl}?width=286&height=180`}
-        className="size-64 h-full w-full bg-radial from-green-500/60 from-25% to-neutral-100 to-70% p-4 sm:col-1 sm:row-span-2 sm:place-self-end"
+        className="size-64 h-fit w-fit self-center bg-radial from-green-500/60 from-25% to-neutral-100 to-70% p-4 xl:col-1 xl:row-span-2 xl:place-self-end"
         alt="Photo of (vehicle class)"
         loading="lazy"
       />
 
-      <div className="sm:col-span-2 sm:grid sm:h-full">
+      <div className="xl:col-span-2 xl:grid xl:h-full">
         <div className="p-2">
           <strong>
             {car.brand} {car.model}
@@ -105,7 +105,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
             {car.location.city}, {car.location.country}
           </p>
         </div>
-        <div className="relative p-2 sm:before:absolute sm:before:top-0 sm:before:left-[50%] sm:before:h-1 sm:before:w-[75%] sm:before:translate-x-[-50%] sm:before:border-t-2 sm:before:border-green-600/40 sm:before:content-['']">
+        <div className="relative p-2 xl:before:absolute xl:before:top-0 xl:before:left-[50%] xl:before:h-1 xl:before:w-[75%] xl:before:translate-x-[-50%] xl:before:border-t-2 xl:before:border-green-600/40 xl:before:content-['']">
           <div
             className="rounded-m flex w-fit items-center rounded-md p-1"
             style={{
@@ -162,12 +162,12 @@ const RentalCard = ({ car }: { car: carInfo }) => {
           </div>
         </div>
       </div>
-      <div className="relative flex justify-around p-4 sm:col-span-3 sm:col-start-2 sm:before:absolute sm:before:top-0 sm:before:h-1 sm:before:w-full sm:before:border-t-2 sm:before:border-green-600/40 sm:before:content-['']">
+      {/* <div className="relative flex justify-around p-4 xl:col-span-3 xl:col-start-2 xl:before:absolute xl:before:top-0 xl:before:h-1 xl:before:w-full xl:before:border-t-2 xl:before:border-green-600/40 xl:before:content-['']">
         <p>Damage Insurance (Price + 5%)</p>
         <p>Monthly repayments - (Price + 2% interest) </p>
         <p>RentaMember - (Price - 10%, subscriber to the business)</p>
-      </div>
-      <div className="relative p-2 sm:col-4 sm:row-1 sm:before:absolute sm:before:top-0 sm:before:left-0 sm:before:h-full sm:before:border-l-2 sm:before:border-green-600/40 sm:before:content-['']">
+      </div> */}
+      <div className="relative p-2 xl:col-4 xl:row-1 xl:before:absolute xl:before:top-0 xl:before:left-0 xl:before:h-full xl:before:border-l-2 xl:before:border-green-600/40 xl:before:content-['']">
         <div className="flex h-full flex-col items-start justify-between">
           <img
             src={`${car.rentalCompany.logoUrl}`}
@@ -183,7 +183,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
               at &#8364;{car.pricing.dailyRate} a day
             </p>
           </div>
-          <button className="self-end rounded-md bg-green-600 p-2 text-white transition-all hover:-translate-y-0.5 hover:bg-green-700 active:-translate-y-0">
+          <button className="self-center rounded-md bg-green-600 p-2 text-white transition-all hover:-translate-y-0.5 hover:bg-green-700 active:translate-y-0 xl:self-end">
             View offer (opens further info about car)
           </button>
         </div>

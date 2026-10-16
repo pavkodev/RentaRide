@@ -3,7 +3,7 @@ import type { carInfo } from "../types/types";
 import RentalCard from "./RentalCard";
 
 const FleetCards = () => {
-  const dataPath = "https://fleet-0737f1.tiiny.site/fleet.json";
+  const dataPath = "https://api.npoint.io/084f3d6aca9f58b791de.json";
   const [data, setData] = useState<carInfo[]>([]);
 
   useEffect(() => {
@@ -63,11 +63,11 @@ const FleetCards = () => {
     console.log(data);
   }, [data]);
   return (
-    <>
+    <div className="m-auto grid w-fit sm:grid-cols-2 lg:grid-cols-3 xl:block">
       {data.slice(0, 20).map((datum, index) => (
         <RentalCard key={index + datum.id} car={datum} />
       ))}
-    </>
+    </div>
   );
 };
 export default FleetCards;
