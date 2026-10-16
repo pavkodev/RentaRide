@@ -13,7 +13,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
   const ratingHueContent = "contrast-color(" + ratingHueBg + ")";
 
   return (
-    <div className="m-auto my-2 flex w-full max-w-[90%] flex-col rounded-md border-3 bg-neutral-100 text-[#212121] xl:grid xl:max-w-full xl:auto-cols-max">
+    <div className="m-auto my-2 flex w-full max-w-[90%] flex-col rounded-md border-3 bg-neutral-100 text-[#212121] xl:grid xl:max-w-full xl:auto-cols-fr">
       <img
         src={`${car.imageUrl}?width=286&height=180`}
         className="size-64 h-fit w-fit self-center bg-radial from-green-500/60 from-25% to-neutral-100 to-70% p-4 xl:col-1 xl:row-span-2 xl:place-self-end"
