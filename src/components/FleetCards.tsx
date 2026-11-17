@@ -3,7 +3,7 @@ import type { carInfo } from "../types/types";
 import RentalCard from "./RentalCard";
 
 const FleetCards = () => {
-  const dataPath = "https://api.npoint.io/084f3d6aca9f58b791de.json";
+  const dataPath = "https://api.npoint.io/8b37b84c2b7b1b848ea3.json";
   const [data, setData] = useState<carInfo[]>([]);
 
   useEffect(() => {

@@ -1,15 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import Calendar from "react-calendar";
 import { type CalendarValues, CalendarMonths } from "../types/calendar-types";
-const Header = () => {
-  const dateToday = new Date();
-  const invalidDate = new Date(
-    new Date().setDate(dateToday.getDate() - 999999),
-  );
+import { CalendarContext } from "../contexts/CalendarContext";
 
-  const [dateSelection, setDateSelection] = useState<CalendarValues>(
-    new Date(invalidDate),
-  );
+const Header = () => {
+  const { setDays: setRentalDays } = useContext(CalendarContext);
+  const dateToday = new Date();
 
   const [selectionString, setSelectionString] = useState("Choose dates...");
   const [showCalendar, setShowCalendar] = useState(false);
@@ -20,33 +16,45 @@ const Header = () => {
     if (Array.isArray(input)) {
       const startDate = input[0] !== null ? new Date(input[0]) : null;
       const endDate = input[1] !== null ? new Date(input[1]) : null;
-      if (startDate !== null && endDate !== null) {
-        setSelectionString(
+      let formattedStartDate = "";
+      let formattedEndDate = "";
+
+      if (startDate) {
+        formattedStartDate =
           CalendarMonths[startDate.getMonth()] +
-            " " +
-            startDate.getDate().toString() +
-            " " +
-            startDate.getFullYear() +
-            " - " +
-            CalendarMonths[endDate.getMonth()] +
-            " " +
-            endDate.getDate().toString() +
-            " " +
-            endDate.getFullYear(),
+          " " +
+          startDate.getDate().toString() +
+          " " +
+          startDate.getFullYear();
+      }
+      if (endDate) {
+        formattedEndDate =
+          CalendarMonths[endDate.getMonth()] +
+          " " +
+          endDate.getDate().toString() +
+          " " +
+          endDate.getFullYear();
+      }
+
+      if (
+        startDate &&
+        endDate &&
+        formattedStartDate.toString() !== formattedEndDate.toString()
+      ) {
+        setSelectionString(formattedStartDate + " - " + formattedEndDate);
+        const timeDifference = Math.abs(
+          endDate.getTime() - startDate.getTime(),
         );
+        const dayDifference =
+          Math.floor(timeDifference / (1000 * 60 * 60 * 24)) + 1;
+        setRentalDays(dayDifference);
       } else if (startDate !== null) {
-        setSelectionString(
-          CalendarMonths[startDate.getMonth()] +
-            " " +
-            startDate.getDate().toString() +
-            " " +
-            startDate.getFullYear(),
-        );
+        setSelectionString(formattedStartDate);
+        setRentalDays(1);
       } else {
         setSelectionString("Choose dates...");
       }
     }
-    setDateSelection(input);
   };
 
   useEffect(() => {

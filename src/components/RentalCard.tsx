@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import type { carInfo } from "../types/types";
+import { CalendarContext } from "../contexts/CalendarContext";
 
 const RentalCard = ({ car }: { car: carInfo }) => {
   const RATING_SCALE_MIN = 4.5; //mock database ratings did not go below 7
@@ -19,6 +21,8 @@ const RentalCard = ({ car }: { car: carInfo }) => {
         ? "border-stone-400 bg-stone-300/30 fill-current/90 text-current/90"
         : "border-green-600/40 bg-green-300/30 fill-green-300/80 text-green-300/80"
     }`;
+
+  const { days: rentalDays } = useContext(CalendarContext);
 
   return (
     <div
@@ -190,9 +194,21 @@ const RentalCard = ({ car }: { car: carInfo }) => {
             className="m-0 mb-4 w-fit max-w-32"
           />
           <div>
-            <p className="text-xs">Total for (amount) days</p>
+            <p className="text-xs">
+              {rentalDays ? (
+                <>
+                  Total for {rentalDays} day{rentalDays > 1 ? "s" : ""}
+                </>
+              ) : (
+                ""
+              )}
+            </p>
             <p className="text-2xl font-bold">
-              &#8364;{car.pricing.dailyRate} * amount of days
+              {rentalDays ? (
+                <>&#8364;{car.pricing.dailyRate * rentalDays}</>
+              ) : (
+                ""
+              )}
             </p>
             <p className="text-xs italic">
               at &#8364;{car.pricing.dailyRate} a day
