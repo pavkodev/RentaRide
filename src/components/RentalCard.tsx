@@ -24,13 +24,20 @@ const RentalCard = ({ car }: { car: carInfo }) => {
 
   const { days: rentalDays } = useContext(CalendarContext);
 
+  const displayExtrasRates = (base: number, percentage: number): string => {
+    if (!rentalDays) return "";
+    const extraCost = (base * rentalDays * percentage) / 100;
+    const formatted = extraCost.toFixed(2);
+    return formatted;
+  };
+
   return (
     <div
       className={`m-auto my-2 flex w-full max-w-[90%] flex-col rounded-md border-3 border-[#212121] ${car.category !== "Premium" ? "bg-neutral-100 text-[#212121]" : "bg-green-800 text-[#F0F5F1]"} xl:grid xl:max-w-full xl:auto-cols-fr`}
     >
       <img
         src={`${car.imageUrl}?width=286&height=180`}
-        className="size-64 h-fit w-fit self-center bg-radial from-green-500/60 from-25% to-inherit to-70% p-4 xl:col-1 xl:row-span-2 xl:place-self-end"
+        className="size-64 h-fit w-fit self-center bg-radial from-green-500/60 from-25% to-inherit to-70% p-4 xl:col-1 xl:row-span-2"
         alt="Photo of (vehicle class)"
         loading="lazy"
       />
@@ -182,9 +189,31 @@ const RentalCard = ({ car }: { car: carInfo }) => {
         </div>
       </div>
       <div className="relative flex justify-around p-4 xl:col-span-3 xl:col-start-2 xl:before:absolute xl:before:top-0 xl:before:h-1 xl:before:w-full xl:before:border-t-2 xl:before:border-green-600/40 xl:before:content-['']">
-        <p>Damage Insurance (Price + 5%)</p>
-        <p>Monthly repayments - (Price + 2% interest) </p>
-        <p>RentaMember - (Price - 10%, subscriber to the business)</p>
+        {rentalDays !== undefined && (
+          <>
+            <p>
+              Damage Insurance: &#8364;
+              {displayExtrasRates(car.pricing.dailyRate, 35)}
+            </p>
+            <p>
+              Monthly installments interest - &#8364;
+              {displayExtrasRates(car.pricing.dailyRate, 12)}
+            </p>
+            {/* interest-free monthly repayments and 5% */}
+            <p>
+              Become a{" "}
+              <span className="group relative cursor-help underline decoration-dotted underline-offset-2">
+                RentaMember
+                <aside
+                  id="rentamember-info"
+                  className="absolute bottom-full left-0 z-10 hidden w-full rounded-md bg-black/70 py-2 text-center text-sm text-white opacity-0 transition-all transition-discrete duration-200 group-hover:block group-hover:opacity-100 motion-reduce:transition-none"
+                >
+                  interest-free monthly installments and 5% off your rental
+                </aside>
+              </span>
+            </p>
+          </>
+        )}
       </div>
       <div className="relative p-2 xl:col-4 xl:row-1 xl:before:absolute xl:before:top-0 xl:before:left-0 xl:before:h-full xl:before:border-l-2 xl:before:border-green-600/40 xl:before:content-['']">
         <div className="flex h-full flex-col items-start justify-between">
@@ -207,7 +236,7 @@ const RentalCard = ({ car }: { car: carInfo }) => {
               {rentalDays ? (
                 <>&#8364;{car.pricing.dailyRate * rentalDays}</>
               ) : (
-                ""
+                "Select a date range."
               )}
             </p>
             <p className="text-xs italic">

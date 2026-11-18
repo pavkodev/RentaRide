@@ -29,3 +29,9 @@
     }
   }
 }
+
+#rentamember-info {
+  @starting-style {
+    opacity: 0;
+  }
+}

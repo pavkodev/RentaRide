@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import type { carInfo } from "../types/types";
 import RentalCard from "./RentalCard";
+import { CalendarContext } from "../contexts/CalendarContext";
 
 const FleetCards = () => {
   const dataPath = "https://api.npoint.io/8b37b84c2b7b1b848ea3.json";
   const [data, setData] = useState<carInfo[]>([]);
+  const { days: rentalDays } = useContext(CalendarContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -62,12 +64,16 @@ const FleetCards = () => {
   useEffect(() => {
     console.log(data);
   }, [data]);
-  return (
+  return rentalDays ? (
     <div className="m-auto grid w-fit sm:grid-cols-2 lg:grid-cols-3 xl:block">
       {data.slice(0, 20).map((datum, index) => (
         <RentalCard key={index + datum.id} car={datum} />
       ))}
     </div>
+  ) : (
+    <p className="m-auto my-10 text-center">
+      Please select your desired date range.
+    </p>
   );
 };
 export default FleetCards;
